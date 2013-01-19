@@ -1,9 +1,9 @@
 		<!-- SIDEBAR CONTENT -->
 		
-		<div class="content-right">
+		<aside>
 
 		<div class="title">
-		<h1 class="title">Press Releases</h1>
+		<h1 class="title">Media</h1>
 		</div>
 		
 
@@ -25,6 +25,6 @@
 		
 		<?php endif; ?>
 		
-		<p><a href="#">Older Releases</a></p>
+		<p><a href="#">Older Media</a></p>
 						
-		</div><!-- <div class="content-right"> -->
+		</aside>

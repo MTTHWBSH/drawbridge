@@ -10,11 +10,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>Drawbridge</title>
-  <meta name="description" content="">
-
-  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="drawbridge, open drawbridge, eli review">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 
@@ -29,7 +30,8 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
- 
+ <div id="main">
+    
     <header>
 	
 	<!-- Header IMAGE -->
@@ -40,31 +42,8 @@
 
   	
   	<!-- NAVIGATION -->
-  	
-  	<?php
-if ( is_page('Page One') ) { $active = 'one'; }
-elseif ( is_page('Page Two') ) { $active = 'two'; }
-elseif ( is_page('Page Three') ) { $active = 'three'; }
-elseif ( is_page('Page Four') ) { $active = 'four'; }
-elseif ( is_page('Page Five') ) { $active = 'two'; }
-elseif ( is_page('Page Six') ) { $active = 'three'; }
-elseif ( is_page('Page Seven') ) { $active = 'four'; }
-?>
-  	
   	<div id="nav">
-  		<ul>
-  			<li><a class="one" href="#">Home</a></li>
-  			<li class="divider"></li>
-   			<li><a class="two" href="#">About</a></li>
-  			<li class="divider"></li> 
-  			<li><a class="three" href="#">Media</a></li>
-  			<li class="divider"></li>  	
-  			<li><a class="four" href="#">Products</a></li>
-  			<li class="divider"></li>  								
-  			<li><a class="five" href="#">People</a></li>
-  			<li class="divider"></li>
-  			<li><a class="six" href="#">Partners</a></li>
-  			<li class="divider"></li>
-  			<li><a class="seven" href="#">Contact</a></li>
-  		</ul>
+
+  		<?php wp_nav_menu( array('menu' => 'Primary Navigation' )); ?>
+  		
   	</div><!-- div id="nav"> -->

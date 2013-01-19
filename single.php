@@ -13,7 +13,6 @@
 
 				<h1 class="title"><?php the_title(); ?></h1>
 				<hr class="title">
-				<p class="bi-line">posted by <a href="#"><?php the_author() ?></a> - <?php the_time('F jS, Y') ?></p>
 
 				<p><?php the_content(); ?></p>
 				
